@@ -1,0 +1,19 @@
+{
+  "name": "autobio",
+  "version": "1.0.0",
+  "description": "My autobiography",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sc-github-dev/autobio.git"
+  },
+  "author": "me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sc-github-dev/autobio/issues"
+  },
+  "homepage": "https://github.com/sc-github-dev/autobio#readme"
+}
