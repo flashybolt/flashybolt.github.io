@@ -7,7 +7,12 @@
       <link href="../dist/css/output.css" rel="stylesheet">
       <link rel="icon" type="image/x-icon" href="../dist/img/favicon.ico">
    </head>
-   <body>
-      <h1 class="text-3xl">Hello world!</h1>
+   <body class="bg-slate-900 w-screen h-screen">
+      <div class="w-screen h-16 bg-slate-800 p-3 px-5 flex flex-row align-center gap-x-6">
+        <img class="h-10 w-10" src="{{url_for('static', filename='img/favicon.ico')}}" >
+        <div class="text-xl text-orange-600 flex justify-center items-center">Flashybolt</div>
+      </div>
+      <div class="w-screen flex">
+      </div>
    </body>
 </html>
