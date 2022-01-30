@@ -4,7 +4,8 @@
   "description": "My autobiography",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch"
   },
   "repository": {
     "type": "git",

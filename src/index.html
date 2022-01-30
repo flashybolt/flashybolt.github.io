@@ -1,18 +1,25 @@
 <!doctype html>
 <html>
    <head>
-      <title>Bio | Flashybolt</title>
+      <title>Flashybolt</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="../dist/css/output.css" rel="stylesheet">
       <link rel="icon" type="image/x-icon" href="../dist/img/favicon.ico">
    </head>
-   <body class="bg-slate-900 w-screen h-screen">
-      <div class="w-screen h-16 bg-slate-800 p-3 px-5 flex flex-row align-center gap-x-6">
-        <img class="h-10 w-10" src="{{url_for('static', filename='img/favicon.ico')}}" >
-        <div class="text-xl text-orange-600 flex justify-center items-center">Flashybolt</div>
+   <body class="bg-bg w-screen h-screen flex justify-center items-center">
+      <div class="w-2/5 h-screen flex justify-center items-center flex-col">
+        <div class="w-full flex justify-center items-center flex-col">
+          <img class="w-80 h-80" src="{{url_for('static', filename='img/favicon.ico')}}">
+          <div class="text-3xl text-rose-500 mt-4">Flashybolt</div>
+        </div>
+        <div class="h-px w-4/5 full bg-slate-500 my-5"></div>
+        <div class="w-full flex justify-center items-center flex-col">
+          <div class="w-2/3 text-xl text-slate-300 mt-4 text-center">Hi! I'm a programmer who smashes keyboards. I mainly write node.js and make flask apps!</div>
+        </div>
       </div>
-      <div class="w-screen flex">
+      <div class="absolute h-16 w-full flex flex-row items-center justify-center bottom-0">
+        this is the footer that im too lazy to make lol
       </div>
    </body>
 </html>
