@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/sc-github-dev/autobio/issues"
   },
-  "homepage": "https://github.com/sc-github-dev/autobio#readme"
+  "homepage": "https://github.com/sc-github-dev/autobio#readme",
+  "dependencies": {
+    "@mdi/font": "^6.5.95",
+    "tailwindcss": "^3.0.18"
+  }
 }
