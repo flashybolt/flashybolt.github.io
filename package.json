@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sc-github-dev/autobio#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@mdi/font": "^6.5.95",
     "tailwindcss": "^3.0.18"
   }
