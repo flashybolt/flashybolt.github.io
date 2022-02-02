@@ -7,7 +7,7 @@ def index():
     
 @app.route("/projects")
 def projects():
-    return "hi"
+    return render_template('projects.html')
     
 if __name__ == '__main__':
     app.run(debug=True)

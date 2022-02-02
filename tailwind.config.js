@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bg":"#282C2F"
+        "bg":"#282C2F",
+        "card":"#1C1E21"
       }
     },
   },
