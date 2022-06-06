@@ -5,7 +5,9 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./static/output.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/public/css/input.css -o ./src/public/css/output.css --watch",
+    "build": "webpack --mode=development --watch",
+	"dev": "node src/devserver.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,15 @@
   "homepage": "https://github.com/sc-github-dev/autobio#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "@mdi/font": "^6.5.95",
     "firebase": "^9.8.2",
+    "path": "^0.12.7",
     "tailwindcss": "^3.0.18"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "express": "^4.18.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   }
 }

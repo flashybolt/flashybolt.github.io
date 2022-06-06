@@ -1,24 +1,33 @@
 {
   "hosting": {
     "public": "dist",
-	"cleanUrls": true,
-	"trailingSlash": true,
+    "cleanUrls": true,
+    "trailingSlash": true,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-	"redirects": [
+    "redirects": [
       {
         "source": "/",
         "destination": "/profile",
         "type": 301
-      },
-	  {
-        "source": "/p",
-        "destination": "/profile",
-        "type": 301
       }
     ]
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "database": {
+      "port": 9000
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": false
+    }
   }
 }

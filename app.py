@@ -1,9 +1,0 @@
-from flask import *
-app = Flask(__name__, template_folder="src", static_folder="static")
-
-@app.route("/profile")
-def index():
-    return render_template("profile.html")
-    
-if __name__ == '__main__':
-    app.run(debug=True)

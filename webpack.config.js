@@ -1,0 +1,1 @@
+const path = require('path');module.exports = {  entry: './src/public/js/index.js',  output: {    path: path.resolve(__dirname, './src/public'),    filename: 'bundle.js'  },  devtool: 'eval'  };
