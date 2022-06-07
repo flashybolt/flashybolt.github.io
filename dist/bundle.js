@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./dist/js/index.js":
+/*!**************************!*\
+  !*** ./dist/js/index.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/index.esm.js\");\n/* harmony import */ var firebase_analytics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/analytics */ \"./node_modules/firebase/analytics/dist/index.esm.js\");\n\r\n\r\n\r\nconst firebaseConfig = {\r\n  apiKey: \"AIzaSyAGRmIoaOQN7HefDo_9AOsEXa6d5-vGDa4\",\r\n  authDomain: \"flashybolty.firebaseapp.com\",\r\n  projectId: \"flashybolty\",\r\n  storageBucket: \"flashybolty.appspot.com\",\r\n  messagingSenderId: \"1014198555810\",\r\n  appId: \"1:1014198555810:web:eb86d245256911099273fb\",\r\n  measurementId: \"G-MC8JHQPEL5\"\r\n};\r\n\r\nconst app = (0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);\r\nconst analytics = (0,firebase_analytics__WEBPACK_IMPORTED_MODULE_1__.getAnalytics)(app);\n\n//# sourceURL=webpack://autobio/./dist/js/index.js?");
+
+/***/ }),
+
 /***/ "./node_modules/@firebase/util/dist/index.esm2017.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@firebase/util/dist/index.esm2017.js ***!
@@ -37,16 +47,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"FirebaseError\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.FirebaseError),\n/* harmony export */   \"SDK_VERSION\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.SDK_VERSION),\n/* harmony export */   \"_DEFAULT_ENTRY_NAME\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._DEFAULT_ENTRY_NAME),\n/* harmony export */   \"_addComponent\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._addComponent),\n/* harmony export */   \"_addOrOverwriteComponent\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._addOrOverwriteComponent),\n/* harmony export */   \"_apps\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._apps),\n/* harmony export */   \"_clearComponents\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._clearComponents),\n/* harmony export */   \"_components\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._components),\n/* harmony export */   \"_getProvider\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._getProvider),\n/* harmony export */   \"_registerComponent\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._registerComponent),\n/* harmony export */   \"_removeServiceInstance\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__._removeServiceInstance),\n/* harmony export */   \"deleteApp\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.deleteApp),\n/* harmony export */   \"getApp\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.getApp),\n/* harmony export */   \"getApps\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.getApps),\n/* harmony export */   \"initializeApp\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp),\n/* harmony export */   \"onLog\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.onLog),\n/* harmony export */   \"registerVersion\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.registerVersion),\n/* harmony export */   \"setLogLevel\": () => (/* reexport safe */ _firebase_app__WEBPACK_IMPORTED_MODULE_0__.setLogLevel)\n/* harmony export */ });\n/* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @firebase/app */ \"./node_modules/@firebase/app/dist/esm/index.esm2017.js\");\n\n\n\nvar name = \"firebase\";\nvar version = \"9.8.2\";\n\n/**\r\n * @license\r\n * Copyright 2020 Google LLC\r\n *\r\n * Licensed under the Apache License, Version 2.0 (the \"License\");\r\n * you may not use this file except in compliance with the License.\r\n * You may obtain a copy of the License at\r\n *\r\n *   http://www.apache.org/licenses/LICENSE-2.0\r\n *\r\n * Unless required by applicable law or agreed to in writing, software\r\n * distributed under the License is distributed on an \"AS IS\" BASIS,\r\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n * See the License for the specific language governing permissions and\r\n * limitations under the License.\r\n */\r\n(0,_firebase_app__WEBPACK_IMPORTED_MODULE_0__.registerVersion)(name, version, 'app');\n//# sourceMappingURL=index.esm.js.map\n\n\n//# sourceURL=webpack://autobio/./node_modules/firebase/app/dist/index.esm.js?");
-
-/***/ }),
-
-/***/ "./static/js/index.js":
-/*!****************************!*\
-  !*** ./static/js/index.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/index.esm.js\");\n/* harmony import */ var firebase_analytics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/analytics */ \"./node_modules/firebase/analytics/dist/index.esm.js\");\n\r\n\r\n\r\nconst firebaseConfig = {\r\n  apiKey: \"AIzaSyAGRmIoaOQN7HefDo_9AOsEXa6d5-vGDa4\",\r\n  authDomain: \"flashybolty.firebaseapp.com\",\r\n  projectId: \"flashybolty\",\r\n  storageBucket: \"flashybolty.appspot.com\",\r\n  messagingSenderId: \"1014198555810\",\r\n  appId: \"1:1014198555810:web:eb86d245256911099273fb\",\r\n  measurementId: \"G-MC8JHQPEL5\"\r\n};\r\n\r\nconst app = (0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);\r\nconst analytics = (0,firebase_analytics__WEBPACK_IMPORTED_MODULE_1__.getAnalytics)(app);\n\n//# sourceURL=webpack://autobio/./static/js/index.js?");
 
 /***/ }),
 
@@ -192,7 +192,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./static/js/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./dist/js/index.js");
 /******/ 	
 /******/ })()
 ;
