@@ -1,6 +1,8 @@
-import "./loadcss.js"
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+//import "./loadcss.js"
+//import { initializeApp } from "firebase/app";
+//import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAGRmIoaOQN7HefDo_9AOsEXa6d5-vGDa4",
@@ -14,3 +16,5 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+console.log("Index loaded.");
