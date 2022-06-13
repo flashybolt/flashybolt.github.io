@@ -1,2 +1,2 @@
-//import "../css/output.css";
-//import "../css/manual.css";
+import "../css/output.css";
+import "../css/manual.css";

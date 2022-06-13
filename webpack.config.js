@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/js/index.js',  
   devtool: 'source-map',
   output: {    
-    path: path.resolve(__dirname, './src'),    
+    path: path.resolve(__dirname, './src/assets'),    
     filename: 'bundle.min.js'
   },
   optimization: {
@@ -15,19 +15,23 @@ module.exports = {
     minimizer: [
       new TerserPlugin({
         extractComments: false,
-      }),
-      new CssMinimizerPlugin()
+      })
     ]
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [
+          MiniCssExtractPlugin.loader, 
+          "css-loader",
+          "postcss-loader"
+        ],
       },
     ],
   },
   plugins: [new MiniCssExtractPlugin({
-    filename:"bundle.min.css"
+    filename:"bundle.min.css",
+    chunkFilename: "bundle.min.css"
   })],
 };
