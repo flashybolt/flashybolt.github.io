@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {  
   entry: './src/js/index.js',  
-  devtool: 'source-map',
+  devtool: 'cheap-source-map',
   output: {    
     path: path.resolve(__dirname, './src/assets'),    
     filename: 'bundle.min.js'
@@ -22,12 +22,23 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
+        exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader, 
           "css-loader",
           "postcss-loader"
         ],
       },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
     ],
   },
   plugins: [new MiniCssExtractPlugin({
