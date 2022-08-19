@@ -1,0 +1,15 @@
+@import "../node_modules/rfs/scss";
+
+#pfp {
+	@include padding(5rem);
+}
+
+.container-content {
+	@include margin(10rem);
+}
+
+.top-header {
+	@include margin-top(3rem);
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';
