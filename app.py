@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for
+import os
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -16,4 +17,5 @@ def affiliations():
     return render_template("affiliations.html")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    server_port = os.environ.get('PORT', '8080')
+    app.run(debug=False, port=server_port, host='0.0.0.0')
