@@ -12,9 +12,9 @@ def index():
 def projects():
     return render_template("projects.html")
 
-@app.route("/affiliations")
-def affiliations():
-    return render_template("affiliations.html")
+@app.route("/ctf")
+def ctf():
+    return render_template("ctf.html")
 
 if __name__ == '__main__':
     server_port = os.environ.get('PORT', '8080')
