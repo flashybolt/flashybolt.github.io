@@ -1,3 +1,3 @@
-# Hey there! I'm a coding nerd.
+# yes
 
-I enjoy making firebase apps using nodejs, and have experience in nodejs, python, html, and css!
+yes
