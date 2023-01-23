@@ -1,18 +1,27 @@
 {
-  "name": "bootstrap-test",
+  "name": "flashybolt",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "flashybolt",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass static/main.scss static/main.min.css --watch --no-source-map --style=compressed",
-    "build": "pip install -r requirements.txt && yarn install",
-    "python": "python app.py"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "rfs": "^9.0.6"
+    "gatsby": "^5.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gatsby-plugin-postcss": "^6.4.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
   }
 }
