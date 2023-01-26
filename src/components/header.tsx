@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
+import { Link, navigate } from "gatsby"
 import { Disclosure } from '@headlessui/react'
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronUp, ChevronDown, GitHub } from 'react-feather';
+import { useLocation } from '@reach/router';
 
 const navigation = [
-  { name: 'Home', href: '#'},
-  { name: 'Projects', href: '#',},
-  { name: 'Stack', href: '#',},
-  { name: 'Setup', href: '#',},
-  { name: 'Blog', href: '#',},
+ 'Home',
+ 'Projects',
+ 'Stack',
+ 'Setup',
+ 'Blog'
 ]
 
 function classNames(...classes: string[]) {
@@ -16,7 +18,13 @@ function classNames(...classes: string[]) {
 }
 
 export default function Header() {
-  const [selectedTab, setSelectedTab] = useState(navigation[0]);
+  var current = useLocation().pathname.replace('/', '').replace('/', '');
+  if (current == '') {
+    current = 'home'
+  }
+  current = current.charAt(0).toUpperCase() + current.slice(1);
+  current = navigation.indexOf(current)
+  const [selectedTab, setSelectedTab] = useState(navigation[current]);
   return (
     <Disclosure as="nav" className="w-full mt-20">
       {({ open }) => (
@@ -37,16 +45,21 @@ export default function Header() {
                 <div className="hidden sm:block h-full">
                   <div className="flex space-x-4 h-full">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
+                      <Link
+                        to={item == "Home" ? (
+                          "/"
+                        ) : (
+                          "/" + item.toLowerCase()
+                        )}
+                        key={item}
                         onClick={() => setSelectedTab(item)}
                         className={item === selectedTab ? "text-white px-1 font-medium relative flex flex-col items-center justify-center" : "text-gray-500 px-1 font-medium relative flex flex-col items-center justify-center"}
                         >
-                        {item.name}
+                        {item}
                         {item === selectedTab ? (
                           <motion.div className="h-px bg-white bottom-0 w-full absolute" layoutId="underline" />
                         ) : null}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -68,12 +81,17 @@ export default function Header() {
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className='text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                  key={item}
+                  onClick={
+                    ()=>{navigate(item == "Home" ? (
+                      "/"
+                    ) : (
+                      "/" + item.toLowerCase()
+                    ))}
+                  }
+                  className='text-gray-300 px-1 font-medium relative flex flex-col justify-center mt-2'
                 >
-                  {item.name}
+                  {item}
                 </Disclosure.Button>
               ))}
             </div>
