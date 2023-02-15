@@ -1,36 +1,28 @@
 {
-  "name": "flashybolt",
-  "version": "1.0.0",
-  "private": true,
-  "description": "flashybolt",
-  "author": "Samuel Chow",
-  "keywords": [
-    "gatsby"
-  ],
+  "name": "solidtest",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
+  },
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "solid-start-node": "^0.2.19",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^3.2.5"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.7",
-    "framer-motion": "^8.5.3",
-    "gatsby": "^5.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-feather": "^2.0.10"
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.7.0",
+    "solid-js": "^1.6.10",
+    "solid-start": "^0.2.20",
+    "undici": "^5.15.1"
   },
-  "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "autoprefixer": "^10.4.13",
-    "gatsby-plugin-postcss": "^6.5.0",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
-    "typescript": "^4.9.4"
+  "engines": {
+    "node": ">=16"
   }
 }
