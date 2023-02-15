@@ -22,7 +22,7 @@ export default function Root() {
   location = location.slice(1)
   location = location.charAt(0).toUpperCase() + location.slice(1);
   return (
-    <Html lang="en" class="">
+    <Html lang="en" class="dark">
       <Head>
         <Title>{location}</Title>
         <Meta charset="utf-8" />
