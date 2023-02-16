@@ -30,7 +30,6 @@ export default function Root() {
         <script defer src="/fa/brands.min.js"></script>
         <script defer src="/fa/solid.min.js"></script>
         <script defer src="/fa/fontawesome.min.js"></script>
-        <script src="/darkmode.js"></script>
       </Head>
       <Body class="dark:bg-black dark:text-white bg-white text-black font-inter transition duration-300 ease-in-out">
         <Suspense>
