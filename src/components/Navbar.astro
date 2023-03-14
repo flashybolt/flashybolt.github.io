@@ -1,0 +1,12 @@
+---
+export interface Props {}
+import DarkToggle from './DarkToggle.astro';
+---
+<nav class="w-full mx-auto my-20 max-w-4xl px-8 flex justify-start items-center">
+	<a href="/" class="outline-none mr-10 transition duration-300 ease-in-out dark:hover:text-teal-200 hover:text-teal-800">
+		<i class="fa-solid fa-house w-4 h-4"></i>
+	</a>
+	<a href="/projects" class="outline-none mr-10 transition duration-300 ease-in-out dark:hover:text-teal-200 hover:text-teal-800">projects</a>
+	<a href="/stack" class="outline-none mr-10 transition duration-300 ease-in-out dark:hover:text-teal-200 hover:text-teal-800">stack</a>
+	<DarkToggle />
+</nav>

@@ -1,0 +1,18 @@
+---
+import { useState } from 'react';
+const getDate = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+    const seconds = (date.getSeconds() < 10 ? '0' : '') + date.getSeconds();
+    const month = date.toLocaleString('default', { month: 'long' });
+    const meridiem = hours < 12 ? 'AM' : 'PM';
+    const year = date.getFullYear();
+    const day = date.getDate();
+    return(`${day}th ${month} ${year} • ${hours}:${minutes}:${seconds} ${meridiem}`);
+}
+---
+<p class="mt-3 ">
+    <i class="fa-regular fa-clock"></i>
+    {getDate()}
+</p>

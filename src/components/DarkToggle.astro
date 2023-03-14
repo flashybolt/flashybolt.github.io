@@ -1,0 +1,23 @@
+---
+
+---
+
+<button id="switcher" class="transition duration-300 ease-in-out ml-auto w-10 h-10 rounded-lg dark:bg-slate-800 dark:hover:bg-slate-700 bg-slate-200 hover:bg-slate-300 flex items-center justify-center">
+  <i id="icon" class="fa-solid fa-moon w-4 h-4 dark:text-slate-400 p-3 dark:hover:text-slate-200 text-slate-600 hover:text-slate-800 rounded-lg flex items-center justify-center"></i>
+</button>
+
+<script>
+
+  function handleClick() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark');
+      document.getElementById('icon')!.classList.remove('fa-moon');
+      document.getElementById('icon')!.classList.add('fa-sun');
+    } else {
+      document.documentElement.classList.add('dark');
+      document.getElementById('icon')!.classList.remove('fa-sun');
+      document.getElementById('icon')!.classList.add('fa-moon');
+    }
+  };
+  document.getElementById("switcher")!.addEventListener("click", handleClick);
+</script>
